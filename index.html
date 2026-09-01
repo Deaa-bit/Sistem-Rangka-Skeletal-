@@ -6,12 +6,12 @@
   <title>Sistem Rangka (Skeletal)</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
-  <!-- Tema Cerah (White/Sky Blue) -->
+  <!-- Tema Putih Bersih -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/white.min.css">
   <style>
     .reveal { 
-      background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 100%); 
-      color: #1a252c;
+      background-color: #ffffff !important; 
+      color: #1b4332;
     }
     .container { 
       display: flex; 
@@ -21,57 +21,71 @@
       gap: 20px; 
     }
     .col-text { 
-      flex: 1.2; 
-      font-size: 0.68em; 
+      flex: 1.3; 
+      font-size: 0.65em; 
       line-height: 1.5; 
-      color: #2c3e50; 
+      color: #2d6a4f; 
     }
     .col-img { 
-      flex: 0.8; 
+      flex: 0.7; 
       text-align: center; 
     }
     .col-img img { 
       max-width: 100%; 
-      max-height: 380px; 
-      border-radius: 12px; 
-      box-shadow: 0 8px 20px rgba(0, 119, 182, 0.15); 
-      border: 3px solid #0077b6;
+      max-height: 360px; 
+      border-radius: 10px; 
+      box-shadow: 0 6px 16px rgba(45, 106, 79, 0.2); 
+      border: 3px solid #52b788;
       background-color: #ffffff; 
-      padding: 6px; 
+      padding: 4px; 
     }
-    h2 { color: #0077b6; font-weight: 700; }
-    h3 { color: #023e8a; font-weight: 700; border-bottom: 2px solid #90e0ef; padding-bottom: 5px; }
-    h4 { color: #0096c7; }
-    .caption { font-size: 0.6em; color: #0077b6; margin-top: 6px; font-style: italic; font-weight: 600; }
+    h2 { color: #1b4332 !important; font-weight: 700; }
+    h3 { color: #2d6a4f !important; font-weight: 700; border-bottom: 2px solid #74c69d; padding-bottom: 5px; }
+    h4 { color: #40916c !important; }
+    .caption { font-size: 0.6em; color: #2d6a4f; margin-top: 6px; font-style: italic; font-weight: 600; }
     ul, ol { margin-left: 18px; }
-    li { margin-bottom: 6px; }
+    li { margin-bottom: 5px; }
 
-    /* Style Khusus Tombol Navigasi Pembahasan (Bisa Diklik) */
+    /* Style Tombol Navigasi Hijau */
     .menu-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
+      gap: 10px;
       margin-top: 15px;
     }
     .menu-btn {
-      background-color: #ffffff;
-      border: 2px solid #0077b6;
+      background-color: #f7fff7;
+      border: 2px solid #52b788;
       border-radius: 8px;
-      padding: 10px 14px;
-      font-size: 0.65em;
+      padding: 8px 12px;
+      font-size: 0.58em;
       font-weight: bold;
-      color: #0077b6 !important;
+      color: #1b4332 !important;
       text-decoration: none;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     .menu-btn:hover {
-      background-color: #0077b6;
+      background-color: #52b788;
       color: #ffffff !important;
       transform: translateY(-2px);
+    }
+    .back-btn {
+      font-size: 0.5em; 
+      color: #2d6a4f !important; 
+      font-weight: bold;
+      text-decoration: none;
+      border: 1px solid #74c69d;
+      padding: 3px 8px;
+      border-radius: 5px;
+      background-color: #f7fff7;
+    }
+    .back-btn:hover {
+      background-color: #74c69d;
+      color: #ffffff !important;
     }
   </style>
 </head>
@@ -79,12 +93,12 @@
   <div class="reveal">
     <div class="slides">
 
-      <!-- Slide Judul -->
+      <!-- SLIDE 1: Judul Utama -->
       <section id="s-judul">
-        <h2 style="color: #0077b6;">SISTEM RANGKA (SKELETAL)</h2>
+        <h2>SISTEM RANGKA (SKELETAL)</h2>
         <h4>Anatomi Fisiologi Tubuh Manusia</h4>
         <p><small><b>Dosen Pengampu:</b> Dr. Dani Ramdani S.Pd., M.Pd.</small></p>
-        <hr style="border-color: #0077b6; width: 60%;">
+        <hr style="border-color: #52b788; width: 60%;">
         <p><small><b>Penyusun (Kelompok):</b><br>
         Dea Aprilia (242154111007)<br>
         Salsabila Farhana (242154111049)<br>
@@ -92,100 +106,99 @@
         <p><small>Program Studi Pendidikan Biologi | Universitas Siliwangi (2026)</small></p>
       </section>
 
-      <!-- Slide Menu Pembahasan (Navigasi Interaktif) -->
+      <!-- SLIDE 2: DAFTAR PEMBAHASAN (INTERAKTIF BISA DIKLIK) -->
       <section id="s-menu">
         <h3>DAFTAR PEMBAHASAN</h3>
-        <p style="font-size: 0.6em; color: #555;">Pencet subbab di bawah untuk langsung menuju ke slide pembahasan:</p>
+        <p style="font-size: 0.55em; color: #40916c;">Klik pada topik pembahasan di bawah untuk langsung menuju slide materi:</p>
         <div class="menu-grid">
-          <a href="#/s-pendahuluan" class="menu-btn"><span>1. Pendahuluan & Fungsi Rangka</span> ➔</a>
-          <a href="#/s-histologi" class="menu-btn"><span>2. Histologi Tulang & Matriks</span> ➔</a>
+          <a href="#/s-fungsi" class="menu-btn"><span>1. Fungsi Utama Sistem Rangka</span> ➔</a>
+          <a href="#/s-histologi" class="menu-btn"><span>2. Histologi Tulang & Jaringan</span> ➔</a>
           <a href="#/s-osifikasi-intra" class="menu-btn"><span>3. Osifikasi Intramembranosa</span> ➔</a>
           <a href="#/s-osifikasi-endo" class="menu-btn"><span>4. Osifikasi Endokondral</span> ➔</a>
           <a href="#/s-tengkorak" class="menu-btn"><span>5. Rangka Aksial: Tengkorak</span> ➔</a>
-          <a href="#/s-vertebra" class="menu-btn"><span>6. Kolumna Vertebra</span> ➔</a>
-          <a href="#/s-toraks" class="menu-btn"><span>7. Sangkar Toraks</span> ➔</a>
-          <a href="#/s-panggul-bahu" class="menu-btn"><span>8. Gelang Bahu & Panggul</span> ➔</a>
+          <a href="#/s-vertebra" class="menu-btn"><span>6. Kolumna Vertebra (Spine)</span> ➔</a>
+          <a href="#/s-toraks" class="menu-btn"><span>7. Sangkar Toraks & Sternum</span> ➔</a>
+          <a href="#/s-panggul-bahu" class="menu-btn"><span>8. Gelang Bahu & Gelang Panggul</span> ➔</a>
           <a href="#/s-ekstremitas" class="menu-btn"><span>9. Ekstremitas Atas & Bawah</span> ➔</a>
           <a href="#/s-remodeling" class="menu-btn"><span>10. Remodeling & Kalsium</span> ➔</a>
-          <a href="#/s-persendian" class="menu-btn"><span>11. Klasifikasi Persendian</span> ➔</a>
-          <a href="#/s-gerakan" class="menu-btn"><span>12. Jenis Gerakan Sendi</span> ➔</a>
-          <a href="#/s-kelainan" class="menu-btn"><span>13. Kelainan Sistem Rangka</span> ➔</a>
-          <a href="#/s-penutup" class="menu-btn"><span>14. Penutup</span> ➔</a>
+          <a href="#/s-persendian" class="menu-btn"><span>11. Klasifikasi Struktur Sendi</span> ➔</a>
+          <a href="#/s-gerakan" class="menu-btn"><span>12. Jenis Gerakan Sendi Sinovial</span> ➔</a>
+          <a href="#/s-kelainan" class="menu-btn"><span>13. Kelainan & Deformitas Tulang</span> ➔</a>
+          <a href="#/s-penutup" class="menu-btn"><span>14. Penutup & Sesi Diskusi</span> ➔</a>
         </div>
       </section>
 
-      <!-- Slide Pendahuluan -->
-      <section id="s-pendahuluan">
-        <h3>Pendahuluan & Fungsi Rangka</h3>
+      <!-- Pembahasan 1: Fungsi Utama -->
+      <section id="s-fungsi">
+        <h3>1. Fungsi Utama Sistem Rangka</h3>
         <div class="container">
           <div class="col-text" style="flex: 2;">
-            <p>Sistem rangka merupakan sistem organ penopang utama tubuh manusia. Fungsi utamanya meliputi:</p>
             <ul>
-              <li><b>Proteksi Organ Suvital:</b> Melindungi otak (tengkorak), paru & jantung (toraks), serta sumsum tulang belakang.</li>
-              <li><b>Penyokong & Pembentuk Postur:</b> Menahan beban jaringan lunak.</li>
-              <li><b>Penggerak Pasif:</b> Bekerja sama dengan otot rangka (*sistem muskuloskeletal*).</li>
-              <li><b>Homeostasis Mineral:</b> Tempat penyimpanan utama Kalsium ($Ca^{2+}$) & Fosfat ($PO_4^{3-}$).</li>
-              <li><b>Hematopoiesis:</b> Pembentukan sel darah pada sumsum tulang merah.</li>
+              <li><b>Proteksi Organ Vital:</b> Tengkorak melindungi otak, sangkar toraks melindungi jantung & paru-paru, serta panggul melindungi organ reproduksi.</li>
+              <li><b>Penyokong Struktural:</b> Kerangka keras penopang utama beban dan bentuk tubuh.</li>
+              <li><b>Penggerak Pasif:</b> Menjadi tempat melekatnya otot rangka (*muskulus*) untuk memicu pergerakan lewat mekanisme tuas.</li>
+              <li><b>Hematopoiesis:</b> Tempat pembuatan sel-sel darah merah, putih, dan trombosit pada sumsum tulang merah.</li>
+              <li><b>Homeostasis Mineral:</b> Tempat penyimpanan utama kalsium fosfat tubuh.</li>
             </ul>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 1: Histologi Tulang -->
+      <!-- Pembahasan 2: Histologi Tulang -->
       <section id="s-histologi">
         <div class="container">
           <div class="col-text">
-            <h3>Histologi & Matriks Tulang</h3>
+            <h3>2. Histologi & Komponen Jaringan Tulang</h3>
             <ul>
-              <li><b>Matriks Tulang:</b> Terdiri atas komponen anorganik (hidroksiapatit) untuk kekerasan & komponen organik (kolagen tipe I) untuk fleksibilitas.</li>
-              <li><b>Osteoblas:</b> Menghasilkan matriks organik (osteoid) & memicu kalsifikasi.</li>
-              <li><b>Osteosit:</b> Sel tulang dewasa yang mempertahankan homeostasis nutrisi melalui *kanalikuli*.</li>
-              <li><b>Osteoklas:</b> Sel raksasa multinuklear yang memecah matriks (resorpsi).</li>
-              <li><b>Sistem Havers (Osteon):</b> Terdiri dari saluran pusat (pembuluh darah/saraf), lamela, dan lacuna.</li>
+              <li><b>Matriks Tulang:</b> Gabungan garam anorganik (hidroksiapatit) untuk kekerasan dan serabut kolagen tipe I untuk kelenturan.</li>
+              <li><b>Osteoblas:</b> Sel pembentuk tulang yang aktif mensekresi osteoid.</li>
+              <li><b>Osteosit:</b> Sel tulang dewasa di dalam *lacuna* yang menjaga struktur tulang.</li>
+              <li><b>Osteoklas:</b> Sel multinuklear yang memecah/merombak matriks tulang (*resorpsi*).</li>
+              <li><b>Sistem Havers (Osteon):</b> Kanal pusat berisi pembuluh darah & saraf yang dikelilingi lamela konsentris.</li>
             </ul>
           </div>
           <div class="col-img">
             <img src="gambar1.png" alt="Histologi Tulang">
-            <div class="caption">Gambar 1. Struktur Internal Tulang</div>
+            <div class="caption">Gambar 1. Struktur Internal Tulang & Sistem Havers</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 2: Osifikasi Intramembranosa -->
+      <!-- Pembahasan 3: Osifikasi Intramembranosa -->
       <section id="s-osifikasi-intra">
         <div class="container">
           <div class="col-text">
-            <h3>Osifikasi Intramembranosa</h3>
-            <p>Pembentukan tulang langsung dari membran jaringan ikat mesenkim (pada tulang pipih tengkorak & klavikula):</p>
+            <h3>3. Osifikasi Intramembranosa</h3>
+            <p>Pembentukan tulang langsung dari membran jaringan ikat mesenkim (tulang pipih tengkorak & klavikula):</p>
             <ol>
-              <li><b>Pusat Osifikasi:</b> Sel mesenkim berkumpul dan berdiferensiasi menjadi osteoblas.</li>
-              <li><b>Kalsifikasi:</b> Osteoblas mensekresi osteoid yang kemudian mengalami pengerasan.</li>
-              <li><b>Pembentukan Trabekula:</b> Matriks termineralisasi membentuk struktur tulang spons.</li>
-              <li><b>Pembentukan Periosteum:</b> Jaringan mesenkim terluar memadat menjadi periosteum & tulang kompak.</li>
+              <li><b>Pusat Osifikasi:</b> Diferensiasi sel mesenkim menjadi osteoblas.</li>
+              <li><b>Kalsifikasi Matriks:</b> Sekresi osteoid yang kemudian termineralisasi kalsium.</li>
+              <li><b>Pembentukan Trabekula:</b> Matriks membentuk jaring-jaring tulang spons (*spongy bone*).</li>
+              <li><b>Pembentukan Periosteum:</b> Jaringan mesenkim tepi memadat membentuk periosteum dan lapisan tulang kompak.</li>
             </ol>
           </div>
           <div class="col-img">
             <img src="gambar2.png" alt="Osifikasi Intramembranosa">
-            <div class="caption">Gambar 2. Osifikasi Intramembranosa</div>
+            <div class="caption">Gambar 2. Tahap Osifikasi Intramembranosa</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 3: Osifikasi Endokondral -->
+      <!-- Pembahasan 4: Osifikasi Endokondral -->
       <section id="s-osifikasi-endo">
         <div class="container">
           <div class="col-text">
-            <h3>Osifikasi Endokondral</h3>
-            <p>Pembentukan tulang dengan menggantikan model tulang rawan hialin (pada tulang panjang):</p>
+            <h3>4. Osifikasi Endokondral</h3>
+            <p>Pembentukan tulang dengan menggantikan cetakan tulang rawan hialin (pada tulang panjang):</p>
             <ul>
-              <li>Pembentukan model kartilago hialin oleh kondroblas.</li>
-              <li><b>Pusat Osifikasi Primer:</b> Terbentuk di bagian diafisis (batang tulang).</li>
-              <li>Pembentukan rongga medula melalui aktivitas osteoklas.</li>
-              <li><b>Pusat Osifikasi Sekunder:</b> Terbentuk di area epifisis (ujung tulang) saat lahir/setelahnya.</li>
-              <li>Pertumbuhan memanjang dipacu oleh **lempeng epifisis**.</li>
+              <li><b>Model Kartilago Hialin:</b> Dibentuk oleh kondroblas embrional.</li>
+              <li><b>Pusat Osifikasi Primer:</b> Terbentuk pada bagian diafisis (batang).</li>
+              <li><b>Rongga Medula:</b> Diabserpsi oleh osteoklas untuk menciptakan ruang sumsum.</li>
+              <li><b>Pusat Osifikasi Sekunder:</b> Terbentuk di area epifisis (ujung tulang).</li>
+              <li><b>Lempeng Epifisis:</b> Tempat terjadinya pertumbuhan memanjang tulang.</li>
             </ul>
           </div>
           <div class="col-img">
@@ -193,122 +206,122 @@
             <div class="caption">Gambar 3. Tahap Osifikasi Endokondral</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 4: Rangka Aksial - Tengkorak -->
+      <!-- Pembahasan 5: Tengkorak -->
       <section id="s-tengkorak">
         <div class="container">
           <div class="col-text">
-            <h3>Rangka Aksial: Tengkorak</h3>
+            <h3>5. Rangka Aksial: Tengkorak</h3>
             <ul>
-              <li><b>Neurocranium (Pelindung Otak):</b>
+              <li><b>Neurocranium (8 Tulang Pelindung Otak):</b>
                 <ul>
-                  <li>Os Frontale, Parietale (2), Temporale (2), Occipitale, Sphenoidale, Ethmoidale.</li>
+                  <li>Os Frontale (1), Os Parietale (2), Os Temporale (2), Os Occipitale (1), Os Sphenoidale (1), Os Ethmoidale (1).</li>
                 </ul>
               </li>
-              <li><b>Viscerocranium (Tulang Wajah):</b>
+              <li><b>Viscerocranium (14 Tulang Wajah):</b>
                 <ul>
-                  <li>Os Maxilla, Mandibula (bergerak), Zygomaticum, Nasale, Lacrimale, Palatinum.</li>
+                  <li>Os Maxilla (2), Os Mandibula (1 - dapat bergerak), Os Zygomaticum (2), Os Nasale (2), Os Lacrimale (2), Os Palatinum (2), Os Concha Nasalis Inferior (2), Os Vomer (1).</li>
                 </ul>
               </li>
-              <li><b>Sutura:</b> Sendi kaku penyambung antar tulang tengkorak (Sutura Sagitalis, Koronalis, Lambdoidea).</li>
+              <li>Dihubungkan erat oleh sendi kaku **Sutura**.</li>
             </ul>
           </div>
           <div class="col-img">
-            <img src="gambar4.png" alt="Tulang Tengkorak">
-            <div class="caption">Gambar 4. Anatomi Tengkorak</div>
+            <img src="gambar4.png" alt="Tengkorak">
+            <div class="caption">Gambar 4. Struktur Anatomi Tengkorak</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 5: Kolumna Vertebra -->
+      <!-- Pembahasan 6: Kolumna Vertebra -->
       <section id="s-vertebra">
         <div class="container">
           <div class="col-text">
-            <h3>Kolumna Vertebra (Tulang Belakang)</h3>
-            <p>Tersusun atas 33 ruas yang terbagi menjadi 5 segmen:</p>
+            <h3>6. Kolumna Vertebra (Tulang Belakang)</h3>
+            <p>Tersusun atas 33 ruas tulang terbagi dalam 5 segmen utama:</p>
             <ul>
-              <li><b>7 Servikal:</b> C1 (Atlas) & C2 (Aksis) memungkinkan pergerakan kepala.</li>
-              <li><b>12 Torakal:</b> Tempat melekatnya tulang rusuk.</li>
-              <li><b>5 Lumbal:</b> Ukuran korpus paling besar, menopang beban berat badan.</li>
-              <li><b>5 Sakral:</b> Menyatu membentuk Os Sacrum.</li>
-              <li><b>4 Koksigeal:</b> Menyatu membentuk tulang ekor.</li>
+              <li><b>7 Servikal (C1-C7):</b> C1 (Atlas) penopang tengkorak, C2 (Aksis) rotasi kepala.</li>
+              <li><b>12 Torakal (T1-T12):</b> Tempat melekatnya tulang rusuk.</li>
+              <li><b>5 Lumbal (L1-L5):</b> Berukuran besar, menopang beban utama tubuh.</li>
+              <li><b>5 Sakral (S1-S5):</b> Menyatu membentuk Os Sacrum.</li>
+              <li><b>4 Koksigeal:</b> Menyatu menjadi tulang ekor.</li>
             </ul>
           </div>
           <div class="col-img">
             <img src="gambar5.png" alt="Kolumna Vertebra">
-            <div class="caption">Gambar 5. Segmen Kolumna Vertebra</div>
+            <div class="caption">Gambar 5. Pembagian Kolumna Vertebra</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 6: Sangkar Toraks -->
+      <!-- Pembahasan 7: Toraks -->
       <section id="s-toraks">
         <div class="container">
           <div class="col-text">
-            <h3>Sangkar Toraks</h3>
+            <h3>7. Sangkar Toraks (Thoracic Cage)</h3>
             <ul>
-              <li><b>Sternum (Tulang Dada):</b> Manubrium, Corpus, & Processus Xiphoideus.</li>
-              <li><b>Tulang Rusuk (Costa): 12 Pasang</b>
+              <li><b>Sternum (Tulang Dada):</b> Consist of <i>Manubrium sterni</i>, <i>Corpus sterni</i>, dan <i>Processus xiphoideus</i>.</li>
+              <li><b>Tulang Rusuk / Costa (12 Pasang):</b>
                 <ul>
-                  <li><b>Costa Vera (1-7):</b> Menempel langsung ke sternum via kartilago.</li>
-                  <li><b>Costa Spuria (8-10):</b> Menempel pada kartilago rusuk ke-7.</li>
-                  <li><b>Costa Fluctuantes (11-12):</b> Melayang (tanpa perlekatan anterior).</li>
+                  <li><b>Costa Vera (1-7):</b> Menempel langsung ke sternum via kartilago kosta.</li>
+                  <li><b>Costa Spuria (8-10):</b> Menempel ke kartilago rusuk ke-7.</li>
+                  <li><b>Costa Fluctuantes (11-12):</b> Melayang (tanpa perlekatan di depan).</li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="col-img">
             <img src="gambar6.png" alt="Sangkar Toraks">
-            <div class="caption">Gambar 6. Sangkar Toraks</div>
+            <div class="caption">Gambar 6. Anatomi Sangkar Toraks</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 7: Gelang Bahu & Panggul -->
+      <!-- Pembahasan 8: Gelang Bahu & Panggul -->
       <section id="s-panggul-bahu">
         <div class="container">
           <div class="col-text">
-            <h3>Gelang Bahu & Panggul</h3>
+            <h3>8. Gelang Bahu & Gelang Panggul</h3>
             <ul>
               <li><b>Gelang Bahu (Pectoral Girdle):</b>
                 <ul>
-                  <li><i>Clavicula</i> & <i>Scapula</i>. Menyambungkan anggota gerak atas ke aksial. Memiliki rentang gerak yang sangat luas.</li>
+                  <li>Terdiri dari <i>Clavicula</i> (selangka) dan <i>Scapula</i> (belikat). Menyambungkan ekstremitas atas ke aksial dengan ruang gerak bebas.</li>
                 </ul>
               </li>
               <li><b>Gelang Panggul (Pelvic Girdle):</b>
                 <ul>
-                  <li><i>Os Coxae</i> (Ilium, Ischium, Pubis). Berstruktur sangat kokoh untuk menopang seluruh massa tubuh bagian atas.</li>
+                  <li>Terdiri dari <i>Os Coxae</i> (gabungan dari <i>Ilium</i>, <i>Ischium</i>, dan <i>Pubis</i>). Sangat kokoh untuk menopang beban berat tubuh.</li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="col-img">
             <img src="gambar9.png" alt="Gelang Panggul">
-            <div class="caption">Gambar 7. Anatomi Panggul</div>
+            <div class="caption">Gambar 7. Anatomi Gelang Panggul</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 8: Ekstremitas -->
+      <!-- Pembahasan 9: Ekstremitas -->
       <section id="s-ekstremitas">
         <div class="container">
           <div class="col-text">
-            <h3>Ekstremitas Atas & Bawah</h3>
+            <h3>9. Ekstremitas Atas & Bawah</h3>
             <ul>
               <li><b>Ekstremitas Atas:</b>
                 <ul>
-                  <li>Humerus (lengan atas), Radius & Ulna (lengan bawah), Karpal, Metakarpal, dan Falang (jari).</li>
+                  <li><i>Humerus</i> (lengan atas), <i>Radius</i> & <i>Ulna</i> (lengan bawah), 8 <i>Karpal</i>, 5 <i>Metakarpal</i>, 14 <i>Falang</i>.</li>
                 </ul>
               </li>
               <li><b>Ekstremitas Bawah:</b>
                 <ul>
-                  <li>Femur (tulang paha), Patella (tempurung lutut), Tibia & Fibula (tulang kering/betis), Tarsal, Metatarsal, dan Falang.</li>
+                  <li><i>Femur</i> (paha), <i>Patella</i> (tempurung lutut), <i>Tibia</i> (kering) & <i>Fibula</i> (betis), 7 <i>Tarsal</i>, 5 <i>Metatarsal</i>, 14 <i>Falang</i>.</li>
                 </ul>
               </li>
             </ul>
@@ -318,92 +331,94 @@
             <div class="caption">Gambar 8. Tulang Ekstremitas</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 9: Remodeling & Homeostasis -->
+      <!-- Pembahasan 10: Remodeling & Homeostasis Kalsium -->
       <section id="s-remodeling">
         <div class="container">
           <div class="col-text">
-            <h3>Remodeling Tulang & Hormon</h3>
+            <h3>10. Remodeling Tulang & Homeostasis Kalsium</h3>
             <ul>
-              <li><b>Dinamika Remodeling:</b> Siklus seimbang antara resorpsi oleh osteoklas dan pembentukan oleh osteoblas.</li>
-              <li><b>Hormon Paratiroid (PTH):</b> Dirilis saat kalsium darah turun $\rightarrow$ menstimulasi osteoklas untuk merombak tulang.</li>
-              <li><b>Kalsitonin:</b> Dirilis saat kalsium darah tinggi $\rightarrow$ menghambat resorpsi osteoklas & mendeposit kalsium ke tulang.</li>
+              <li><b>Siklus Remodeling:</b> Aktivasi $\rightarrow$ Resorpsi (Osteoklas) $\rightarrow$ Reversal $\rightarrow$ Formasi (Osteoblas) $\rightarrow$ Mineralisasi.</li>
+              <li><b>Hormon Paratiroid (PTH):</b> Dirilis saat kadar kalsium darah turun $\rightarrow$ menstimulasi resorpsi tulang oleh osteoklas.</li>
+              <li><b>Kalsitonin:</b> Dirilis saat kadar kalsium darah tinggi $\rightarrow$ menghambat osteoklas & mendeposit kalsium ke tulang.</li>
             </ul>
           </div>
           <div class="col-img">
             <img src="gambar11.png" alt="Homeostasis Kalsium">
-            <div class="caption">Gambar 9. Homeostasis Kalsium</div>
+            <div class="caption">Gambar 9. Skema Homeostasis Kalsium</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 10: Persendian -->
+      <!-- Pembahasan 11: Persendian -->
       <section id="s-persendian">
         <div class="container">
           <div class="col-text">
-            <h3>Klasifikasi Persendian (Artikulasi)</h3>
+            <h3>11. Klasifikasi Struktur Persendian</h3>
             <ul>
-              <li><b>Sendi Fibrosa (Sinartrosis):</b> Tanpa rongga sendi, dihubungkan jaringan ikat rapat (contoh: Sutura).</li>
-              <li><b>Sendi Kartilago (Amfiartrosis):</b> Dihubungkan tulang rawan, gerakan terbatas (contoh: Simfisis Pubis, Diskus Intervertebralis).</li>
-              <li><b>Sendi Sinovial (Diartrosis):</b> Memiliki membran sinovial, cairan pelumas, dan kapsul sendi (Bebas bergerak).</li>
+              <li><b>Sendi Fibrosa (Sinartrosis):</b> Dihubungkan jaringan ikat fibrosa padat, tanpa rongga sendi (Sendi kaku, misal: Sutura).</li>
+              <li><b>Sendi Kartilago (Amfiartrosis):</b> Dihubungkan tulang rawan, gerakan terbatas (misal: Simfisis pubis).</li>
+              <li><b>Sendi Sinovial (Diartrosis):</b> Memiliki rongga sendi dan cairan pelumas sinovial (Gerakan bebas).</li>
             </ul>
           </div>
           <div class="col-img">
             <img src="gambar14.png" alt="Sendi Sinovial">
-            <div class="caption">Gambar 10. Struktur Sendi Sinovial</div>
+            <div class="caption">Gambar 10. Komponen Sendi Sinovial</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 11: Gerakan Sendi -->
+      <!-- Pembahasan 12: Gerakan Sendi -->
       <section id="s-gerakan">
         <div class="container">
           <div class="col-text">
-            <h3>Jenis Gerakan Sendi Sinovial</h3>
+            <h3>12. Jenis Gerakan Sendi Sinovial</h3>
             <ul>
-              <li><b>Fleksi & Ekstensi:</b> Menurunkan / meningkatkan sudut sendi.</li>
-              <li><b>Abduksi & Adduksi:</b> Menjauhi / mendekati bidang tengah tubuh.</li>
+              <li><b>Fleksi vs Ekstensi:</b> Memperkecil vs memperbesar sudut antar tulang.</li>
+              <li><b>Abduksi vs Adduksi:</b> Menjauhi vs mendekati sumbu tengah tubuh.</li>
               <li><b>Sirkumduksi:</b> Kombinasi fleksi, abduksi, ekstensi, adduksi (gerakan melingkar).</li>
-              <li><b>Rotasi:</b> Gerakan memutar pada sumbu panjang tulang.</li>
+              <li><b>Rotasi:</b> Memutar tulang pada aksis panjangnya.</li>
             </ul>
           </div>
           <div class="col-img">
             <img src="gambar16.png" alt="Gerakan Sendi">
-            <div class="caption">Gambar 11. Variasi Gerakan Sendi</div>
+            <div class="caption">Gambar 11. Variasi Gerakan Biomekanik</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Subbab 12: Kelainan Sistem Rangka -->
+      <!-- Pembahasan 13: Kelainan Sistem Rangka -->
       <section id="s-kelainan">
         <div class="container">
           <div class="col-text">
-            <h3>Kelainan & Patologi Rangka</h3>
+            <h3>13. Kelainan & Deformitas Tulang</h3>
             <ul>
-              <li><b>Deformitas Tulang Belakang:</b> Skoliosis (melengkung samping), Kifosis (bongkok), Lordosis (melengkung depan berlebih).</li>
-              <li><b>Osteoporosis:</b> Penurunan kepadatan matriks tulang akibat ketidakseimbangan resorpsi.</li>
-              <li><b>Fraktur Tulang:</b> Patah tulang (Pola: Terbuka, Tertutup, Comminuted, Greenstick).</li>
-              <li><b>Spina Bifida:</b> Kelainan kongenital penutupan kanalis vertebralis.</li>
+              <li><b>Kelainan Spine:</b> Skoliosis (melengkung samping), Kifosis (bongkok), Lordosis (melengkung depan berlebih).</li>
+              <li><b>Osteoporosis:</b> Penurunan massa matriks tulang sehingga tulang rapuh.</li>
+              <li><b>Fraktur Tulang:</b> Patah tulang (Klasifikasi: Terbuka, Tertutup, *Greenstick*, *Comminuted*).</li>
+              <li><b>Spina Bifida:</b> Kegagalan penutupan kanalis vertebralis sejak janin.</li>
             </ul>
           </div>
           <div class="col-img">
             <img src="gambar17.png" alt="Kelainan Tulang">
-            <div class="caption">Gambar 12. Deformitas Spine</div>
+            <div class="caption">Gambar 12. Deformitas Kurvatur Spine</div>
           </div>
         </div>
-        <p style="text-align: right;"><a href="#/s-menu" style="font-size: 0.5em; color: #0077b6;">[ Kembali ke Menu ]</a></p>
+        <p style="text-align: right;"><a href="#/s-menu" class="back-btn">❮ Kembali ke Menu Pembahasan</a></p>
       </section>
 
-      <!-- Slide Penutup -->
+      <!-- SLIDE 14: Penutup -->
       <section id="s-penutup">
-        <h2>SESI TANYA JAWAB</h2>
-        <p>Terima kasih atas perhatiannya!</p>
-        <p style="margin-top: 30px;"><a href="#/s-menu" style="font-size: 0.7em; color: #0077b6; border: 2px solid #0077b6; padding: 10px 20px; border-radius: 8px; text-decoration: none;">Kembali ke Daftar Pembahasan</a></p>
+        <h2>SESI TANYA JAWAB & DISKUSI</h2>
+        <p style="color: #2d6a4f;">Terima kasih atas perhatian Anda!</p>
+        <p style="margin-top: 30px;">
+          <a href="#/s-menu" class="back-btn" style="font-size: 0.7em; padding: 10px 20px;">➔ Kembali ke Daftar Pembahasan Utama</a>
+        </p>
       </section>
 
     </div>
